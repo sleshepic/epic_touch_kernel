@@ -1,6 +1,6 @@
 -:  include/generated/autoconf.h \
- /home/tigran/ICS/kernels/stock/arch/arm/include/asm/types.h \
+ /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/types.h \
  include/asm-generic/int-ll64.h \
- /home/tigran/ICS/kernels/stock/arch/arm/include/asm/bitsperlong.h \
+ /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/bitsperlong.h \
  include/asm-generic/bitsperlong.h \
- /home/tigran/ICS/kernels/stock/arch/arm/include/asm/unistd.h
+ /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/unistd.h

@@ -1,1 +1,1 @@
-cmd_drivers/video/fb.o := /home/tigran/ICS/toolchain/2009q3-68/bin/arm-none-eabi-ld -EL    -r -o drivers/video/fb.o drivers/video/fbmem.o drivers/video/fbmon.o drivers/video/fbcmap.o drivers/video/fbsysfs.o drivers/video/modedb.o drivers/video/fbcvt.o 
+cmd_drivers/video/fb.o := /home/ian/kernel/toolchain/prebuilt/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o drivers/video/fb.o drivers/video/fbmem.o drivers/video/fbmon.o drivers/video/fbcmap.o drivers/video/fbsysfs.o drivers/video/modedb.o drivers/video/fbcvt.o 

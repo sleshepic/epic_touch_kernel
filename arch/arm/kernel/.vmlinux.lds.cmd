@@ -1,4 +1,4 @@
-cmd_arch/arm/kernel/vmlinux.lds := /home/tigran/ICS/toolchain/2009q3-68/bin/arm-none-eabi-gcc -E -Wp,-MD,arch/arm/kernel/.vmlinux.lds.d  -nostdinc -isystem /home/tigran/ICS/toolchain/2009q3-68/bin/../lib/gcc/arm-none-eabi/4.4.1/include -I/home/tigran/ICS/kernels/stock/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-exynos/include -Iarch/arm/plat-s5p/include -Iarch/arm/plat-samsung/include   -DTEXT_OFFSET=0x00008000 -P -C -Uarm -D__ASSEMBLY__ -DLINKER_SCRIPT -o arch/arm/kernel/vmlinux.lds arch/arm/kernel/vmlinux.lds.S
+cmd_arch/arm/kernel/vmlinux.lds := /home/ian/kernel/toolchain/prebuilt/arm-eabi-4.4.3/bin/arm-eabi-gcc -E -Wp,-MD,arch/arm/kernel/.vmlinux.lds.d  -nostdinc -isystem /home/ian/kernel/toolchain/prebuilt/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include -I/home/ian/kernel/E4GT_ICS_kernel/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-exynos/include -Iarch/arm/plat-s5p/include -Iarch/arm/plat-samsung/include   -DTEXT_OFFSET=0x00008000 -P -C -Uarm -D__ASSEMBLY__ -DLINKER_SCRIPT -o arch/arm/kernel/vmlinux.lds arch/arm/kernel/vmlinux.lds.S
 
 source_arch/arm/kernel/vmlinux.lds := arch/arm/kernel/vmlinux.lds.S
 
@@ -25,17 +25,17 @@ deps_arch/arm/kernel/vmlinux.lds := \
     $(wildcard include/config/generic/bug.h) \
     $(wildcard include/config/pm/trace.h) \
     $(wildcard include/config/blk/dev/initrd.h) \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/thread_info.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/thread_info.h \
     $(wildcard include/config/arm/thumbee.h) \
   include/linux/compiler.h \
     $(wildcard include/config/sparse/rcu/pointer.h) \
     $(wildcard include/config/enable/must/check.h) \
     $(wildcard include/config/enable/warn/deprecated.h) \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/fpstate.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/fpstate.h \
     $(wildcard include/config/vfpv3.h) \
     $(wildcard include/config/smp.h) \
     $(wildcard include/config/iwmmxt.h) \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/memory.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/memory.h \
     $(wildcard include/config/page/offset.h) \
     $(wildcard include/config/thumb2/kernel.h) \
     $(wildcard include/config/highmem.h) \
@@ -50,21 +50,21 @@ deps_arch/arm/kernel/vmlinux.lds := \
     $(wildcard include/config/arch/dma/addr/t/64bit.h) \
     $(wildcard include/config/phys/addr/t/64bit.h) \
     $(wildcard include/config/64bit.h) \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/types.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/types.h \
   include/asm-generic/int-ll64.h \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/bitsperlong.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/bitsperlong.h \
   include/asm-generic/bitsperlong.h \
   arch/arm/mach-exynos/include/mach/memory.h \
     $(wildcard include/config/mach/smdkv310.h) \
     $(wildcard include/config/mach/smdk5250.h) \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/sizes.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/sizes.h \
   include/asm-generic/sizes.h \
   include/asm-generic/memory_model.h \
     $(wildcard include/config/flatmem.h) \
     $(wildcard include/config/discontigmem.h) \
     $(wildcard include/config/sparsemem/vmemmap.h) \
     $(wildcard include/config/sparsemem.h) \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/page.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/page.h \
     $(wildcard include/config/cpu/copy/v3.h) \
     $(wildcard include/config/cpu/copy/v4wt.h) \
     $(wildcard include/config/cpu/copy/v4wb.h) \

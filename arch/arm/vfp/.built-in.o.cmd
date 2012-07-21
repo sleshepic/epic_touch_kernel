@@ -1,1 +1,1 @@
-cmd_arch/arm/vfp/built-in.o :=  /home/tigran/ICS/toolchain/2009q3-68/bin/arm-none-eabi-ld -EL  --no-warn-mismatch   -r -o arch/arm/vfp/built-in.o arch/arm/vfp/vfp.o 
+cmd_arch/arm/vfp/built-in.o :=  /home/ian/kernel/toolchain/prebuilt/arm-eabi-4.4.3/bin/arm-eabi-ld -EL  --no-warn-mismatch   -r -o arch/arm/vfp/built-in.o arch/arm/vfp/vfp.o 

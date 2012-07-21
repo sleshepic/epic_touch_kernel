@@ -1,1 +1,1 @@
-cmd_firmware/built-in.o :=  rm -f firmware/built-in.o; /home/tigran/ICS/toolchain/2009q3-68/bin/arm-none-eabi-ar rcsD firmware/built-in.o
+cmd_firmware/built-in.o :=  rm -f firmware/built-in.o; /home/ian/kernel/toolchain/prebuilt/arm-eabi-4.4.3/bin/arm-eabi-ar rcs firmware/built-in.o

@@ -1,1 +1,1 @@
-cmd_drivers/scsi/scsi_wait_scan.ko := /home/tigran/ICS/toolchain/2009q3-68/bin/arm-none-eabi-ld -EL -r  -T /home/tigran/ICS/kernels/stock/scripts/module-common.lds --build-id  -o drivers/scsi/scsi_wait_scan.ko drivers/scsi/scsi_wait_scan.o drivers/scsi/scsi_wait_scan.mod.o
+cmd_drivers/scsi/scsi_wait_scan.ko := /home/ian/kernel/toolchain/prebuilt/arm-eabi-4.4.3/bin/arm-eabi-ld -EL -r  -T /home/ian/kernel/E4GT_ICS_kernel/scripts/module-common.lds --build-id  -o drivers/scsi/scsi_wait_scan.ko drivers/scsi/scsi_wait_scan.o drivers/scsi/scsi_wait_scan.mod.o

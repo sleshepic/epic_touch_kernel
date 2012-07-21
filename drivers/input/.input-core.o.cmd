@@ -1,1 +1,1 @@
-cmd_drivers/input/input-core.o := /home/tigran/ICS/toolchain/2009q3-68/bin/arm-none-eabi-ld -EL    -r -o drivers/input/input-core.o drivers/input/input.o drivers/input/input-compat.o drivers/input/input-mt.o drivers/input/ff-core.o 
+cmd_drivers/input/input-core.o := /home/ian/kernel/toolchain/prebuilt/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o drivers/input/input-core.o drivers/input/input.o drivers/input/input-compat.o drivers/input/input-mt.o drivers/input/ff-core.o 

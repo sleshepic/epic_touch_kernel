@@ -1,1 +1,1 @@
-cmd_sound/core/snd-timer.o := /home/tigran/ICS/toolchain/2009q3-68/bin/arm-none-eabi-ld -EL    -r -o sound/core/snd-timer.o sound/core/timer.o 
+cmd_sound/core/snd-timer.o := /home/ian/kernel/toolchain/prebuilt/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o sound/core/snd-timer.o sound/core/timer.o 

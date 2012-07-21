@@ -1,1 +1,1 @@
-cmd_net/bluetooth/bnep/built-in.o :=  /home/tigran/ICS/toolchain/2009q3-68/bin/arm-none-eabi-ld -EL    -r -o net/bluetooth/bnep/built-in.o net/bluetooth/bnep/bnep.o 
+cmd_net/bluetooth/bnep/built-in.o :=  /home/ian/kernel/toolchain/prebuilt/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o net/bluetooth/bnep/built-in.o net/bluetooth/bnep/bnep.o 

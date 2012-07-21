@@ -1,4 +1,4 @@
-cmd_drivers/media/video/samsung/mali/linux/mali_osk_notification.o := /home/tigran/ICS/toolchain/2009q3-68/bin/arm-none-eabi-gcc -Wp,-MD,drivers/media/video/samsung/mali/linux/.mali_osk_notification.o.d  -nostdinc -isystem /home/tigran/ICS/toolchain/2009q3-68/bin/../lib/gcc/arm-none-eabi/4.4.1/include -I/home/tigran/ICS/kernels/stock/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-exynos/include -Iarch/arm/plat-s5p/include -Iarch/arm/plat-samsung/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -fdiagnostics-show-option -Werror -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-value -Wno-error=unused-label -marm -fno-dwarf2-cfi-asm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -Wframe-larger-than=1024 -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -g -pg -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DTARGET_BUILD_ENG -Idrivers/media/video/samsung/mali/../ump/include -Idrivers/media/video/samsung/mali -Idrivers/media/video/samsung/mali/platform -Idrivers/media/video/samsung/mali/common -Idrivers/media/video/samsung/mali/linux -DUSING_ZBT=0 -DUSING_OS_MEMORY=1 -DUSING_MMU=1 -DUSING_DED=0 -DUSING_UMP=0 -DONLY_ZBT=0 -D_MALI_OSK_SPECIFIC_INDIRECT_MMAP -DUSING_MALI_PMU=0 -DMALI_PMM_RUNTIME_JOB_CONTROL_ON=1 -DUSING_MALI_PMM=1 -DMALI_GPU_UTILIZATION=1 -DCONFIG_MALI_MEM_SIZE=64 -D_MALI_OSK_SPECIFIC_INDIRECT_MMAP -DMALI_TIMELINE_PROFILING_ENABLED=0 -DMALI_POWER_MGMT_TEST_SUITE=0 -DMALI_MAJOR_PREDEFINE=1 -DMALI_DVFS_ENABLED=1 -DUSING_MALI_PMM_EARLYSUSPEND=0 -DMALI_STATE_TRACKING=1 -DMALI_OS_MEMORY_KERNEL_BUFFER_SIZE_IN_MB=6 -DMALI_UKK_HAS_IMPLICIT_MMAP_CLEANUP -DMALI_USE_UNIFIED_MEMORY_PROVIDER=1 -DHAVE_UNLOCKED_IOCTL -Idrivers/media/video/samsung/mali/linux/license/gpl -Idrivers/media/video/samsung/mali/common/pmm -DUSING_MALI400 -DUSING_MALI400_L2_CACHE -DUSING_KERNEL_PANIC -DSVN_REV= -DSVN_REV_STRING=\"\"    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(mali_osk_notification)"  -D"KBUILD_MODNAME=KBUILD_STR(mali)" -c -o drivers/media/video/samsung/mali/linux/mali_osk_notification.o drivers/media/video/samsung/mali/linux/mali_osk_notification.c
+cmd_drivers/media/video/samsung/mali/linux/mali_osk_notification.o := /home/ian/kernel/toolchain/prebuilt/arm-eabi-4.4.3/bin/arm-eabi-gcc -Wp,-MD,drivers/media/video/samsung/mali/linux/.mali_osk_notification.o.d  -nostdinc -isystem /home/ian/kernel/toolchain/prebuilt/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include -I/home/ian/kernel/E4GT_ICS_kernel/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-exynos/include -Iarch/arm/plat-s5p/include -Iarch/arm/plat-samsung/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -fdiagnostics-show-option -Werror -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-value -Wno-error=unused-label -marm -fno-dwarf2-cfi-asm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -Wframe-larger-than=1024 -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -pg -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DTARGET_BUILD_ENG -Idrivers/media/video/samsung/mali/../ump/include -Idrivers/media/video/samsung/mali -Idrivers/media/video/samsung/mali/platform -Idrivers/media/video/samsung/mali/common -Idrivers/media/video/samsung/mali/linux -DUSING_ZBT=0 -DUSING_OS_MEMORY=1 -DUSING_MMU=1 -DUSING_DED=0 -DUSING_UMP=0 -DONLY_ZBT=0 -D_MALI_OSK_SPECIFIC_INDIRECT_MMAP -DUSING_MALI_PMU=0 -DMALI_PMM_RUNTIME_JOB_CONTROL_ON=1 -DUSING_MALI_PMM=1 -DMALI_GPU_UTILIZATION=1 -DCONFIG_MALI_MEM_SIZE=64 -D_MALI_OSK_SPECIFIC_INDIRECT_MMAP -DMALI_TIMELINE_PROFILING_ENABLED=0 -DMALI_POWER_MGMT_TEST_SUITE=0 -DMALI_MAJOR_PREDEFINE=1 -DMALI_DVFS_ENABLED=1 -DUSING_MALI_PMM_EARLYSUSPEND=0 -DMALI_STATE_TRACKING=1 -DMALI_OS_MEMORY_KERNEL_BUFFER_SIZE_IN_MB=6 -DMALI_UKK_HAS_IMPLICIT_MMAP_CLEANUP -DMALI_USE_UNIFIED_MEMORY_PROVIDER=1 -DHAVE_UNLOCKED_IOCTL -Idrivers/media/video/samsung/mali/linux/license/gpl -Idrivers/media/video/samsung/mali/common/pmm -DUSING_MALI400 -DUSING_MALI400_L2_CACHE -DUSING_KERNEL_PANIC -DSVN_REV= -DSVN_REV_STRING=\"\"    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(mali_osk_notification)"  -D"KBUILD_MODNAME=KBUILD_STR(mali)" -c -o drivers/media/video/samsung/mali/linux/mali_osk_notification.o drivers/media/video/samsung/mali/linux/mali_osk_notification.c
 
 source_drivers/media/video/samsung/mali/linux/mali_osk_notification.o := drivers/media/video/samsung/mali/linux/mali_osk_notification.c
 
@@ -10,9 +10,9 @@ deps_drivers/media/video/samsung/mali/linux/mali_osk_notification.o := \
     $(wildcard include/config/arch/dma/addr/t/64bit.h) \
     $(wildcard include/config/phys/addr/t/64bit.h) \
     $(wildcard include/config/64bit.h) \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/types.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/types.h \
   include/asm-generic/int-ll64.h \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/bitsperlong.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/bitsperlong.h \
   include/asm-generic/bitsperlong.h \
   include/linux/posix_types.h \
   include/linux/stddef.h \
@@ -26,7 +26,7 @@ deps_drivers/media/video/samsung/mali/linux/mali_osk_notification.o := \
     $(wildcard include/config/arch/supports/optimized/inlining.h) \
     $(wildcard include/config/optimize/inlining.h) \
   include/linux/compiler-gcc4.h \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/posix_types.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/posix_types.h \
   drivers/media/video/samsung/mali/common/mali_kernel_memory_engine.h \
   drivers/media/video/samsung/mali/linux/mali_osk_specific.h \
   drivers/media/video/samsung/mali/common/mali_kernel_common.h \
@@ -39,13 +39,13 @@ deps_drivers/media/video/samsung/mali/linux/mali_osk_notification.o := \
     $(wildcard include/config/numa.h) \
     $(wildcard include/config/compaction.h) \
     $(wildcard include/config/ftrace/mcount/record.h) \
-  /home/tigran/ICS/toolchain/2009q3-68/bin/../lib/gcc/arm-none-eabi/4.4.1/include/stdarg.h \
+  /home/ian/kernel/toolchain/prebuilt/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include/stdarg.h \
   include/linux/linkage.h \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/linkage.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/linkage.h \
   include/linux/bitops.h \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/bitops.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/bitops.h \
     $(wildcard include/config/smp.h) \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/system.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/system.h \
     $(wildcard include/config/function/graph/tracer.h) \
     $(wildcard include/config/cpu/32v6k.h) \
     $(wildcard include/config/cpu/xsc3.h) \
@@ -61,12 +61,12 @@ deps_drivers/media/video/samsung/mali/linux/mali_osk_notification.o := \
     $(wildcard include/config/preempt/tracer.h) \
     $(wildcard include/config/trace/irqflags/support.h) \
   include/linux/typecheck.h \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/irqflags.h \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/ptrace.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/irqflags.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/ptrace.h \
     $(wildcard include/config/cpu/endian/be8.h) \
     $(wildcard include/config/arm/thumb.h) \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/hwcap.h \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/outercache.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/hwcap.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/outercache.h \
     $(wildcard include/config/outer/cache/sync.h) \
     $(wildcard include/config/outer/cache.h) \
   include/asm-generic/cmpxchg-local.h \
@@ -78,10 +78,10 @@ deps_drivers/media/video/samsung/mali/linux/mali_osk_notification.o := \
   include/asm-generic/bitops/const_hweight.h \
   include/asm-generic/bitops/lock.h \
   include/asm-generic/bitops/le.h \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/byteorder.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/byteorder.h \
   include/linux/byteorder/little_endian.h \
   include/linux/swab.h \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/swab.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/swab.h \
   include/linux/byteorder/generic.h \
   include/linux/log2.h \
     $(wildcard include/config/arch/has/ilog2/u32.h) \
@@ -93,13 +93,13 @@ deps_drivers/media/video/samsung/mali/linux/mali_osk_notification.o := \
     $(wildcard include/config/modules.h) \
     $(wildcard include/config/hotplug.h) \
   include/linux/dynamic_debug.h \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/bug.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/bug.h \
     $(wildcard include/config/bug.h) \
     $(wildcard include/config/debug/bugverbose.h) \
   include/asm-generic/bug.h \
     $(wildcard include/config/generic/bug.h) \
     $(wildcard include/config/generic/bug/relative/pointers.h) \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/div64.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/div64.h \
   include/linux/version.h \
   include/linux/sched.h \
     $(wildcard include/config/sched/debug.h) \
@@ -157,7 +157,7 @@ deps_drivers/media/video/samsung/mali/linux/mali_osk_notification.o := \
     $(wildcard include/config/preempt.h) \
     $(wildcard include/config/cgroup/sched.h) \
     $(wildcard include/config/mm/owner.h) \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/param.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/param.h \
     $(wildcard include/config/hz.h) \
   include/linux/capability.h \
   include/linux/threads.h \
@@ -168,7 +168,7 @@ deps_drivers/media/video/samsung/mali/linux/mali_osk_notification.o := \
     $(wildcard include/config/arch/uses/gettimeoffset.h) \
   include/linux/cache.h \
     $(wildcard include/config/arch/has/cache/line/size.h) \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/cache.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/cache.h \
     $(wildcard include/config/arm/l1/cache/shift.h) \
     $(wildcard include/config/aeabi.h) \
   include/linux/seqlock.h \
@@ -179,12 +179,12 @@ deps_drivers/media/video/samsung/mali/linux/mali_osk_notification.o := \
   include/linux/preempt.h \
     $(wildcard include/config/debug/preempt.h) \
   include/linux/thread_info.h \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/thread_info.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/thread_info.h \
     $(wildcard include/config/arm/thumbee.h) \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/fpstate.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/fpstate.h \
     $(wildcard include/config/vfpv3.h) \
     $(wildcard include/config/iwmmxt.h) \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/domain.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/domain.h \
     $(wildcard include/config/io/36.h) \
     $(wildcard include/config/cpu/use/domains.h) \
   include/linux/list.h \
@@ -195,15 +195,15 @@ deps_drivers/media/video/samsung/mali/linux/mali_osk_notification.o := \
   include/linux/stringify.h \
   include/linux/bottom_half.h \
   include/linux/spinlock_types.h \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/spinlock_types.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/spinlock_types.h \
   include/linux/lockdep.h \
     $(wildcard include/config/lock/stat.h) \
   include/linux/rwlock_types.h \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/spinlock.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/spinlock.h \
     $(wildcard include/config/thumb2/kernel.h) \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/processor.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/processor.h \
     $(wildcard include/config/arm/errata/754327.h) \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/hw_breakpoint.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/hw_breakpoint.h \
   include/linux/rwlock.h \
   include/linux/spinlock_api_smp.h \
     $(wildcard include/config/inline/spin/lock.h) \
@@ -235,12 +235,12 @@ deps_drivers/media/video/samsung/mali/linux/mali_osk_notification.o := \
     $(wildcard include/config/inline/write/unlock/irq.h) \
     $(wildcard include/config/inline/read/unlock/irqrestore.h) \
     $(wildcard include/config/inline/write/unlock/irqrestore.h) \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/atomic.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/atomic.h \
     $(wildcard include/config/generic/atomic64.h) \
   include/asm-generic/atomic-long.h \
   include/linux/math64.h \
   include/linux/param.h \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/timex.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/timex.h \
   arch/arm/mach-exynos/include/mach/timex.h \
   include/linux/jiffies.h \
   include/linux/rbtree.h \
@@ -250,9 +250,9 @@ deps_drivers/media/video/samsung/mali/linux/mali_osk_notification.o := \
   include/linux/bitmap.h \
   include/linux/string.h \
     $(wildcard include/config/binary/printf.h) \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/string.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/string.h \
   include/linux/errno.h \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/errno.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/errno.h \
   include/asm-generic/errno.h \
   include/asm-generic/errno-base.h \
   include/linux/nodemask.h \
@@ -267,18 +267,18 @@ deps_drivers/media/video/samsung/mali/linux/mali_osk_notification.o := \
     $(wildcard include/config/mmu/notifier.h) \
     $(wildcard include/config/transparent/hugepage.h) \
   include/linux/auxvec.h \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/auxvec.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/auxvec.h \
   include/linux/prio_tree.h \
   include/linux/rwsem.h \
     $(wildcard include/config/rwsem/generic/spinlock.h) \
   include/linux/rwsem-spinlock.h \
   include/linux/completion.h \
   include/linux/wait.h \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/current.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/current.h \
   include/linux/page-debug-flags.h \
     $(wildcard include/config/page/poisoning.h) \
     $(wildcard include/config/page/debug/something/else.h) \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/page.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/page.h \
     $(wildcard include/config/cpu/copy/v3.h) \
     $(wildcard include/config/cpu/copy/v4wt.h) \
     $(wildcard include/config/cpu/copy/v4wb.h) \
@@ -287,8 +287,8 @@ deps_drivers/media/video/samsung/mali/linux/mali_osk_notification.o := \
     $(wildcard include/config/cpu/xscale.h) \
     $(wildcard include/config/cpu/copy/v6.h) \
     $(wildcard include/config/have/arch/pfn/valid.h) \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/glue.h \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/memory.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/glue.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/memory.h \
     $(wildcard include/config/page/offset.h) \
     $(wildcard include/config/dram/size.h) \
     $(wildcard include/config/dram/base.h) \
@@ -298,7 +298,7 @@ deps_drivers/media/video/samsung/mali/linux/mali_osk_notification.o := \
   arch/arm/mach-exynos/include/mach/memory.h \
     $(wildcard include/config/mach/smdkv310.h) \
     $(wildcard include/config/mach/smdk5250.h) \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/sizes.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/sizes.h \
   include/asm-generic/sizes.h \
   include/asm-generic/memory_model.h \
     $(wildcard include/config/flatmem.h) \
@@ -306,17 +306,17 @@ deps_drivers/media/video/samsung/mali/linux/mali_osk_notification.o := \
     $(wildcard include/config/sparsemem/vmemmap.h) \
     $(wildcard include/config/sparsemem.h) \
   include/asm-generic/getorder.h \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/mmu.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/mmu.h \
     $(wildcard include/config/cpu/has/asid.h) \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/cputime.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/cputime.h \
   include/asm-generic/cputime.h \
   include/linux/smp.h \
     $(wildcard include/config/use/generic/smp/helpers.h) \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/smp.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/smp.h \
   include/linux/sem.h \
   include/linux/ipc.h \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/ipcbuf.h \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/sembuf.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/ipcbuf.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/sembuf.h \
   include/linux/rcupdate.h \
     $(wildcard include/config/rcu/torture/test.h) \
     $(wildcard include/config/tree/rcu.h) \
@@ -329,10 +329,10 @@ deps_drivers/media/video/samsung/mali/linux/mali_osk_notification.o := \
     $(wildcard include/config/debug/objects/free.h) \
   include/linux/rcutree.h \
   include/linux/signal.h \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/signal.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/signal.h \
   include/asm-generic/signal-defs.h \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/sigcontext.h \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/siginfo.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/sigcontext.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/siginfo.h \
   include/asm-generic/siginfo.h \
   include/linux/pid.h \
   include/linux/percpu.h \
@@ -340,7 +340,7 @@ deps_drivers/media/video/samsung/mali/linux/mali_osk_notification.o := \
     $(wildcard include/config/need/per/cpu/page/first/chunk.h) \
     $(wildcard include/config/have/setup/per/cpu/area.h) \
   include/linux/pfn.h \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/percpu.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/percpu.h \
   include/asm-generic/percpu.h \
   include/linux/percpu-defs.h \
     $(wildcard include/config/debug/force/weak/per/cpu.h) \
@@ -376,9 +376,8 @@ deps_drivers/media/video/samsung/mali/linux/mali_osk_notification.o := \
   include/linux/notifier.h \
   include/linux/mutex.h \
     $(wildcard include/config/have/arch/mutex/cpu/relax.h) \
-  include/linux/mutex-debug.h \
   include/linux/srcu.h \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/topology.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/topology.h \
   include/asm-generic/topology.h \
   include/linux/proportions.h \
   include/linux/percpu_counter.h \
@@ -390,7 +389,7 @@ deps_drivers/media/video/samsung/mali/linux/mali_osk_notification.o := \
   include/linux/plist.h \
     $(wildcard include/config/debug/pi/list.h) \
   include/linux/resource.h \
-  /home/tigran/ICS/kernels/stock/arch/arm/include/asm/resource.h \
+  /home/ian/kernel/E4GT_ICS_kernel/arch/arm/include/asm/resource.h \
   include/asm-generic/resource.h \
   include/linux/timer.h \
     $(wildcard include/config/timer/stats.h) \

@@ -1,1 +1,1 @@
-cmd_drivers/media/common/built-in.o :=  /home/tigran/ICS/toolchain/2009q3-68/bin/arm-none-eabi-ld -EL    -r -o drivers/media/common/built-in.o drivers/media/common/tuners/built-in.o 
+cmd_drivers/media/common/built-in.o :=  /home/ian/kernel/toolchain/prebuilt/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o drivers/media/common/built-in.o drivers/media/common/tuners/built-in.o 

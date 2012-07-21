@@ -1,1 +1,1 @@
-cmd_drivers/staging/westbridge/astoria/device/built-in.o :=  /home/tigran/ICS/toolchain/2009q3-68/bin/arm-none-eabi-ld -EL    -r -o drivers/staging/westbridge/astoria/device/built-in.o drivers/staging/westbridge/astoria/device/cyasdev.o 
+cmd_drivers/staging/westbridge/astoria/device/built-in.o :=  /home/ian/kernel/toolchain/prebuilt/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o drivers/staging/westbridge/astoria/device/built-in.o drivers/staging/westbridge/astoria/device/cyasdev.o 
