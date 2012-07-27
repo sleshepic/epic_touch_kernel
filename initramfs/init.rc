@@ -123,10 +123,10 @@ on fs
 # mount ext4 partitions
     # Mount /system rw first to give the filesystem a chance to save a checkpoint
     #mount ext4 /dev/block/mmcblk0p9 /system
-    mount ext4 /dev/block/mmcblk0p9 /system noatime wait ro
+    mount ext4 /dev/block/mmcblk0p9 /system wait ro noatime nodiratime
     
     exec sfsck /dev/block/mmcblk0p7 ext4
-    mount ext4 /dev/block/mmcblk0p7 /cache nosuid nodev noatime wait
+    mount ext4 /dev/block/mmcblk0p7 /cache wait nosuid nodev noatime nodiratime 
 
     #exec sfsck /dev/block/mmcblk0p12 ext4
     mount ext4 /dev/block/mmcblk0p12 /preload nosuid nodev noatime wait ro
@@ -134,7 +134,7 @@ on fs
     mkdir /efs
     #mount rfs /dev/block/mmcblk0p1 /efs nosuid nodev check=no
     exec sfsck /dev/block/mmcblk0p1 ext4
-    mount ext4 /dev/block/mmcblk0p1 /efs nosuid nodev noatime wait
+    mount ext4 /dev/block/mmcblk0p1 /efs wait nosuid nodev noatime nodiratime
     chown radio system /efs
     chmod 0771 /efs
     mkdir /efs/bluetooth
@@ -154,7 +154,7 @@ on fs
 
 on post-fs
     exec sfsck /dev/block/mmcblk0p10 ext4
-    mount ext4 /dev/block/mmcblk0p10 /data nosuid nodev noatime wait noauto_da_alloc
+    mount ext4 /dev/block/mmcblk0p10 /data wait nosuid nodev noatime nodiratime crypt discard,noauto_da_alloc,journal_checksum
 
     # once everything is setup, no need to modify /
     mount rootfs rootfs / ro remount
@@ -436,7 +436,58 @@ on boot
     # Tweak background writeout
     write /proc/sys/vm/dirty_expire_centisecs 200
     write /proc/sys/vm/dirty_background_ratio  5
+    write /proc/sys/net/core/wmem_default 256960
+    write /proc/sys/net/core/rmem_default 256960
+    write /proc/sys/net/core/wmem_max 404480
+    write /proc/sys/net/core/rmem_max 404480
+    write /proc/sys/net/ipv4/tcp_rmem 4096 87380 404480
+    write /proc/sys/net/ipv4/tcp_wmem 4096 16384 404480
+    write /proc/sys/vm/swappiness 0
+    write /proc/sys/vm/panic_on_oom 0
+    write /proc/sys/vm/min_free_kbytes 4096
+    write /proc/sys/vm/laptop_mode 0
+    write /proc/sys/vm/lowmem_reserve_ratio 100 100
+    write /proc/sys/vm/highmem_is_dirtyable 1
+    write /proc/sys/vm/overcommit_ratio 70
+    write /proc/sys/vm/page-cluster 3
+    write /sys/module/lowmemorykiller/parameters/debug_level 0
+    write /sys/module/lowmemorykiller/parameters/cost 64
+    write /proc/sys/fs/lease-break-time 20
+    write /proc/sys/kernel/tainted 0
+    write /proc/sys/kernel/ctrl-alt-del 0
+    write /proc/sys/net/ipv4/tcp_fin_timeout 30
+    write /sys/devices/virtual/bdi/179:0/read_ahead_kb 4096 
+    write /sys/block/mmcblk0/queue/iosched/fifo_batch 1
+    write /sys/module/pm_hotplug/parameters/loadl 55
+    write /sys/module/pm_hotplug/parameters/loadh 85
+    write /sys/module/cpuidle/parameters/enable_mask 3
  
+    #My_Edits
+    write /proc/sys/vm/swappiness 0
+    write /proc/sys/vm/panic_on_oom 0
+    write /proc/sys/vm/min_free_kbytes 4096
+    write /proc/sys/vm/laptop_mode 0
+    write /proc/sys/vm/lowmem_reserve_ratio 100 100
+    write /proc/sys/vm/highmem_is_dirtyable 1
+    write /proc/sys/vm/overcommit_ratio 70
+    write /proc/sys/vm/page-cluster 3
+    write /sys/module/lowmemorykiller/parameters/debug_level 0
+    write /sys/module/lowmemorykiller/parameters/cost 64
+    write /proc/sys/fs/lease-break-time 20
+    write /proc/sys/kernel/tainted 0
+    write /proc/sys/kernel/ctrl-alt-del 0
+    write /proc/sys/net/ipv4/tcp_fin_timeout 30
+    write /sys/devices/virtual/bdi/179:0/read_ahead_kb 4096 
+    write /sys/block/mmcblk0/queue/iosched/fifo_batch 1
+    write /sys/module/pm_hotplug/parameters/loadl 55
+    write /sys/module/pm_hotplug/parameters/loadh 85
+    write /sys/module/cpuidle/parameters/enable_mask 3
+    write /sys/devices/system/cpu/cpu0/cpufreq/ondemand/sampling_rate 50000
+    write /sys/devices/system/cpu/cpufreq/ondemand/io_is_busy 1
+    write /proc/sys/vm/drop_caches 3
+    setprop windowsmgr.max_events_per_sec 275
+    setprop debug.sf.hw 1
+
   # permissions for NFC
     setprop ro.nfc.port "I2C"
     chmod 0600 /dev/pn544

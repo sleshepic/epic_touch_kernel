@@ -4727,8 +4727,8 @@ static void mxt224_power_off(void)
   Configuration for MXT224
 */
 #define MXT224_THRESHOLD_BATT		40
-#define MXT224_THRESHOLD_BATT_INIT		55
-#define MXT224_THRESHOLD_CHRG		70
+#define MXT224_THRESHOLD_BATT_INIT		50
+#define MXT224_THRESHOLD_CHRG		55
 #ifndef CONFIG_TARGET_LOCALE_KOR
 #define MXT224_NOISE_THRESHOLD_BATT		15
 #define MXT224_NOISE_THRESHOLD_CHRG		40
@@ -4736,8 +4736,8 @@ static void mxt224_power_off(void)
 #define MXT224_NOISE_THRESHOLD_BATT		30
 #define MXT224_NOISE_THRESHOLD_CHRG		40
 #endif
-#define MXT224_MOVFILTER_BATT		47
-#define MXT224_MOVFILTER_CHRG		47
+#define MXT224_MOVFILTER_BATT		30
+#define MXT224_MOVFILTER_CHRG		40
 #define MXT224_ATCHCALST		4
 #define MXT224_ATCHCALTHR		35
 
@@ -4754,7 +4754,7 @@ static u8 t8_config[] = { GEN_ACQUISITIONCONFIG_T8,
 static u8 t9_config[] = { TOUCH_MULTITOUCHSCREEN_T9,
 	131, 0, 0, 19, 11, 0, 32, MXT224_THRESHOLD_BATT, 2, 1,
 	0,
-	15,			/* MOVHYSTI */
+	5,			/* MOVHYSTI */
 	1, MXT224_MOVFILTER_BATT, MXT224_MAX_MT_FINGERS, 5, 40, 10, 31, 3,
 	223, 1, 0, 0, 0, 0, 143, 55, 143, 90, 18
 };
@@ -6714,7 +6714,7 @@ struct s5p_platform_tmu u1_tmu_data __initdata = {
 		.start_mem_throttle = 85,
 	},
 	.cpufreq = {
-		.limit_1st_throttle  = 800000, /* 800MHz in KHz order */
+		.limit_1st_throttle  = 1200000, /* 800MHz in KHz order */
 		.limit_2nd_throttle  = 200000, /* 200MHz in KHz order */
 	},
 };
